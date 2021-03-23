@@ -1,0 +1,28 @@
+{% extends 'core/base.html'%}
+{%load static %}
+{%block main%}
+
+<div>
+<div class="text-center">
+    <img src="{% static 'core/images/vanshaj.png' %}" alt="dp" class="img-thumbnail" width="250px" height="150px">
+</div>
+    <div class='mx-5 text-justify'>
+        <h1 class="display-3 text-warning">
+            About Me
+        </h1>
+        <h1 class="text-white " style="line-height: 2rem; font-family: 'Montserrat', sans-serif; font-size: 20px;" >
+            <p>My name is <b class="text-warning ">Vanshaj Singh</b>. I am a <b class="text-warning">Software developer</b>. </p>
+            <p>I have a thorough understanding of data structures and algorithms.
+Knowledgeable of back-end development best practices with
+Hands-on software troubleshooting experience.</p>
+Proven track record of proper documentation for future maintenance and upgrades.
+Software developer with experience in multiple settings can design and develop programs using the latest and most appropriate technology. 
+        </h1>
+        <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact'%}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+
+
+
+{% endblock main%}

@@ -1,0 +1,14 @@
+html,body{
+    height:100%;
+    
+}
+.container-fluid{
+    min-height: 100%;
+}
+
+.i-colo{
+    color:chartreuse;
+}
+a.nav-link{
+    color:whitesmoke;
+}
