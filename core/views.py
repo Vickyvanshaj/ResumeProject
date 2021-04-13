@@ -8,7 +8,12 @@ def home(request):
 
 def contact(req):
     if(req.method=='POST'):
-        c=Contact(req.POST)
+        name=req.POST.get('name')
+        email=req.POST.get('email')
+        subject=req.POST.get('subject')
+        msg=req.POST.get('msg')
+        c=Contact.objects.create(name=name,email=email,subject=subject,message=msg)
+        
         
     context={'contact':'active'}
     return render(req,'core/contact.html',context)
